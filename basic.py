@@ -3,7 +3,7 @@ import numpy as np
 
 from mpl_toolkits.mplot3d import Axes3D
 
-from .utils import ypr_to_R
+from utils import ypr_to_R
 
 
 
@@ -159,7 +159,7 @@ class Line:
     Draws a line at a given position, with a given attitude.
     '''
 
-    def __init__(self, ax, c='b', x0=np.array([0.0, 0.0, 0.0]).T, \
+    def __init__(self, ax, c='black', x0=np.array([0.0, 0.0, 0.0]).T, \
         x1=np.array([1.0, 0.0, 0.0]).T):
         '''
         Initialize the line.
